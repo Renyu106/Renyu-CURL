@@ -73,7 +73,7 @@ class CURL{
         curl_setopt($CURL, CURLOPT_HTTPHEADER, array_map(function($k, $v) { return "$k: $v"; }, array_keys($this->CURL_HEADERS), $this->CURL_HEADERS));
         if($this->CURL_REDIRECT_ALLOW) curl_setopt($CURL, CURLOPT_FOLLOWLOCATION, true);
         if(!is_null($this->CURL_PAYLOAD)) curl_setopt($CURL, CURLOPT_POSTFIELDS, $this->CURL_PAYLOAD);
-        if($this->OPTIMIZE_CLOUDFLARE || !empty($ENTERPRISE_REGION_ADDR)) curl_setopt($CURL, CURLOPT_RESOLVE, [$HOST.":443:".$ENTERPRISE_REGION_ADDR, $HOST.":80:".$ENTERPRISE_REGION_ADDR]);
+        if($this->OPTIMIZE_CLOUDFLARE && !empty($ENTERPRISE_REGION_ADDR)) curl_setopt($CURL, CURLOPT_RESOLVE, [$HOST.":443:".$ENTERPRISE_REGION_ADDR, $HOST.":80:".$ENTERPRISE_REGION_ADDR]);
 
         try{
             $EXEC = curl_exec($CURL);
