@@ -9,7 +9,7 @@ class CURL{
     private $CURL_DEFAULT_USER_AGENT = "Renyu-CURL/1.0";
     private $CURL_REDIRECT_ALLOW = false;
     private $OPTIMIZE_CLOUDFLARE = true;
-    private $CLOUDFLARE_ENTERPRISE_DOMAIN = "arca.live";
+    private $CLOUDFLARE_ENTERPRISE_DOMAIN = "discord.com";
     
     public function __construct($URL, $METHOD="GET"){
         $this->CURL_URL = $URL;
