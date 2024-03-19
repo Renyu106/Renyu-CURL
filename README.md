@@ -7,7 +7,7 @@ Renyu-CURL은 PHP에서 쉽고 효율적으로 CURL 요청을 구현할 수 있�
 ## ✨ 주요 기능
 
 - **쉬운 CURL 요청:** 직관적인 메서드를 통해 CURL 요청을 간단하고 명확하게 구성할 수 있어요 👍
-- **Cloudflare 간 통신 최적화:** Cloudflare를 사용하는 서버와의 통신을 자동으로 감지하고 Cloudflare Enterprise 노드와 강제로 연결하여 지연속도를 줄여요 ⚡
+- **Cloudflare 간 통신 최적화(Only HTTPS):** Cloudflare를 사용하는 서버와의 통신을 자동으로 감지하고 Cloudflare Enterprise 노드와 강제로 연결하여 지연속도를 줄여요 (한국의 경우 ICN 리전으로 연결) ⚡
 - **사용자 정의 가능:** 요청 헤더, 사용자 에이전트 등 다양한 CURL 옵션을 사용자가 직접 쉽게 설정할 수 있어요 🛠
 
 ## 🛠️ 사용 방법
